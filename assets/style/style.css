@@ -6,3 +6,35 @@
 .container-fluid {
     background-color: rgb(25, 181, 228);
 }
+
+/* ------  Stylisation de la section des drapeau avec du grid classique en CSS --------- */
+/* Stylisation de la section des drapeau en mobile first */
+#sectionFlags{
+    display: grid;
+    grid-template-columns: 200px;
+    gap: 10px;
+    max-width: 200px; 
+    margin: 2rem auto;
+}
+
+#sectionFlags img {
+    width: 200px;
+}
+
+/* Stylisation de la section des drapeau pour tous les écrans à partir de taille de tablette */
+@media screen and (width >= 758px) {
+    #sectionFlags{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+    max-width: 640px; 
+    margin: 2rem auto;
+} 
+
+#sectionFlags img {
+    width: 300px;
+}
+}
+
+
