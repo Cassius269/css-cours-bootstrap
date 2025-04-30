@@ -1,6 +1,6 @@
 .container {
-    background-color: rgb(226, 174, 40);
-    color: white;
+    /* background-color: rgb(226, 174, 40); */
+    color: rgb(0, 0, 0);
 }
 
 .container-fluid {
@@ -9,7 +9,11 @@
 
 /* ------  Stylisation de la section des drapeau avec du grid classique en CSS --------- */
 /* Stylisation de la section des drapeau en mobile first */
-#sectionFlags{
+div {
+    border: 2px solid sandybrown;
+}
+
+#divSectionFlags{
     display: grid;
     grid-template-columns: 200px;
     gap: 10px;
@@ -17,24 +21,37 @@
     margin: 2rem auto;
 }
 
-#sectionFlags img {
+#divSectionFlags img {
     width: 200px;
 }
 
 /* Stylisation de la section des drapeau pour tous les écrans à partir de taille de tablette */
 @media screen and (width >= 758px) {
-    #sectionFlags{
+    #divSectionFlags{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 2rem;
-    max-width: 640px; 
+    min-width: 922px;
     margin: 2rem auto;
+    padding: 39px;
 } 
 
-#sectionFlags img {
-    width: 300px;
+#divSectionFlags img {
+    width: 300px;    
+    min-width: 386px;
 }
 }
 
+/* Stylisation du système de grille de Bootstrap */
+article {
+    border: 1px solid seagreen;
+}
 
+
+#sectionGridBootstrap {
+    margin: 100px 0 20px 0;
+    background-color: rgb(23, 200, 223);
+    padding: 5px;
+    text-align: center;
+}
