@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="page de présentation des typographie Bootstrap">
+    <title>Page de présentation des formulaires Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="/assets/style/pages/formsPage.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="/public/index.html">Accueil</a></li>
+        <li><a href="/public/pages/typography.html">Typographie de Bootstrap</a></li>
+        <li><a href="/public/pages/forms.html">Formulaires de Bootstrap</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <h1>Les formulaires Bootstrap</h1>
+  <section class="container">
+    <h2>Formulaire de contact</h2>
+      <form >
+          <div class="mb-3">
+            <label for="email" class="form-label">Email </label>
+            <input type="email" class="form-control" id="email" >
+            <p id="emailHelp" class="form-text">Nous ne partagerons pas votre email avec personne.</p>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="my-3">
+            <label for="motivations" class="form-label">Motif principal du message</label>
+            <select name="motivations" id="motivations" class="form-select">
+              <option value="1">Devis</option>
+              <option value="2" selected>Renseignement</option>
+              <option value="3">Maintenance</option>
+            </select>
+          </div>
+          <div>
+            <label for="presentation" class="form-label">Décrire votre demande</label>
+            <textarea name="presentation" id="presentation" class="form-control"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <div>
+            <p>Comment souhaitez-vous être contacté ?</p>
+            <div class="mb-4 form-check" id="formDivCheckboxes">
+              <div>
+                <label for="emailPreference" class="form-check-label">Email:</label>
+                <input type="checkbox" name="emailPreference" id="emailPreference" value="emailPreference" class="form-check-input">
+              </div>
+              <div>
+                <input type="checkbox" name="phonePreference" id="phonePreference" value="phonePreference" class="form-check-input">
+                <label for="phonePreference" class="form-check-label">Téléphone</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+  </section>
+</main>
+<footer></footer>
+</html>
