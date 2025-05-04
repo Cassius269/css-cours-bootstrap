@@ -23,7 +23,7 @@
   <h1>Les formulaires Bootstrap</h1>
   <section class="container">
     <h2>Formulaire de contact</h2>
-      <form >
+      <form class="border p-4 rounded-4 shadow-lg">
         <!-- l'input et légende du champs email -->
           <div class="mb-3">
             <label for="email" class="form-label">Email </label>
@@ -49,21 +49,24 @@
             <label for="content" class="form-label">Décrire votre demande</label>
             <textarea name="content" id="content" class="form-control"></textarea>
           </div>
+        <!-- les checkbox des choix de(s) préference(s) de communication-->
           <div class="mt-3">
             <p>Comment souhaitez-vous être contacté ?</p>
             <div class="mb-4 form-check" id="formDivCheckboxes">
-              <div>
-                <label for="emailPreference" class="form-check-label">Email:</label>
-                <input type="checkbox" name="emailPreference" id="emailPreference" value="emailPreference" class="form-check-input">
+              <div class="form-check">
+                <label for="emailPreference" class="form-check-label">Email</label>
+                <input type="checkbox" name="preference" id="emailPreference" value="emailPreference" class="form-check-input">
               </div>
-              <div>
-                <input type="checkbox" name="phonePreference" id="phonePreference" value="phonePreference" class="form-check-input">
+              <div class="form-check">
+                <input type="checkbox" name="preference" id="phonePreference" value="phonePreference" class="form-check-input">
                 <label for="phonePreference" class="form-check-label">Téléphone</label>
               </div>
             </div>
           </div>
         <!-- le bouton d'envoi du formulaires -->
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary p-2 rounded fs-3 police-fluider">Submit</button>
+         </div>
         </form>
   </section>
 </main>
