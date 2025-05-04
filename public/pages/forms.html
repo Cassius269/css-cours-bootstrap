@@ -24,15 +24,18 @@
   <section class="container">
     <h2>Formulaire de contact</h2>
       <form >
+        <!-- l'input et légende du champs email -->
           <div class="mb-3">
             <label for="email" class="form-label">Email </label>
             <input type="email" class="form-control" id="email" >
             <p id="emailHelp" class="form-text">Nous ne partagerons pas votre email avec personne.</p>
           </div>
+        <!-- l'input et légende du champs mot de passe -->
           <div class="mb-3">
             <label for="password" class="form-label">Mot de passe:</label>
             <input type="password" class="form-control" id="password">
           </div>
+        <!-- la balise de sélection sa légende pour le champs de sélection du motif principal du message à envoyer -->
           <div class="my-3">
             <label for="motivations" class="form-label">Motif principal du message</label>
             <select name="motivations" id="motivations" class="form-select">
@@ -41,15 +44,12 @@
               <option value="3">Maintenance</option>
             </select>
           </div>
+        <!-- le champs message texte long et sa légende du message à envoyer -->
           <div>
-            <label for="presentation" class="form-label">Décrire votre demande</label>
-            <textarea name="presentation" id="presentation" class="form-control"></textarea>
+            <label for="content" class="form-label">Décrire votre demande</label>
+            <textarea name="content" id="content" class="form-control"></textarea>
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <div>
+          <div class="mt-3">
             <p>Comment souhaitez-vous être contacté ?</p>
             <div class="mb-4 form-check" id="formDivCheckboxes">
               <div>
@@ -62,6 +62,7 @@
               </div>
             </div>
           </div>
+        <!-- le bouton d'envoi du formulaires -->
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
   </section>
