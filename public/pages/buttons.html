@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="page de présentation des typographie Bootstrap">
+    <title>Page de présentation de la stylisation des boutons de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li> <a href="/public/index.html">Accueil</a></li>
+            <li><a href="/public/pages/typography.html">Typographie de Bootstrap</a></li>
+            <li><a href="/public/pages/forms.html">Formulaires de Bootstrap</a></li>
+            <li><a href="/public/pages/buttons.html">Boutons de Bootstrap</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>La stylisation des boutons par Bootstrap</h1>
+
+        <!-- Section de stylisation simple des boutons avec background-->
+        <section class="my-5">
+            <h2>Les boutons classiques de Bootstrap</h2>
+            <div class="container">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+    
+                <button type="button" class="btn btn-link">Link</button>
+            </div>    
+        </section>
+
+        <!-- Section de stylisation simple des boutons sans background-->
+        <section>
+            <h2>La personnlisation des boutons avec Bootstrap sans background de couleur actif</h2>
+            <button type="button" class="btn btn-outline-primary">Je suis un bouton à appuyer</button>
+            <a href="#" class="btn btn-outline-secondary">Je suis un lien imitant un bouton</a>
+            <button type="button" class="btn btn-outline-success">Je suis un bouton sans background actif</button>
+        </section>
+
+        <!-- Section de stylisation des groupes de boutons avec Bootstrap -->
+        <section class="my-5" >
+            <h2>La personnalisation des groupes de boutons avec Bootstrap</h2>
+            <div class="btn-group" role="group" aria-label="melange de boutons">
+                <button type="button" class="btn btn-danger">Bouton à gauche</button>
+                <button type="button" class="btn btn-warning">Bouton du milieu</button>
+                <button type="button" class="btn btn-success">Bouton à droite</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

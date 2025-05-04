@@ -15,10 +15,12 @@ div {
 
 #divSectionFlags{
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 150px;
     gap: 10px;
     max-width: 200px; 
     margin: 2rem auto;
+    display: flex
+;
 }
 
 #divSectionFlags img {
