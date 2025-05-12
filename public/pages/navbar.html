@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="page de présentation de menu latéral">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"> 
+    <title>Page de présentation de menu latéral</title>
+</head>
+<body>
+  <header>
+      <a class="btn" data-bs-toggle="offcanvas" href="#menuLateral" role="button" aria-controls="menuLateral">
+        <i class="bi bi-list" style="font-size: 30px;"></i>
+      </a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateral"  data-bs-scroll="true" data-bs-backdrop="false">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav>
+            <ul>
+              <li> <a href="/public/index.html">Accueil</a></li>
+              <li><a href="/public/pages/typography.html">Typographie de Bootstrap</a></li>
+              <li><a href="/public/pages/forms.html">Formulaires de Bootstrap</a></li>
+              <li><a href="/public/pages/buttons.html">Boutons de Bootstrap</a></li>
+              <li><a href="/public/pages/images.html">Les images</a></li>
+              <li><a href="/public/pages/icons.html">Les icônes</a></li>
+              <li><a href="/public/pages/dropDown.html">Les dropdowns</a></li>
+              <li><a href="/public/pages/progressBar.html">progress bar</a></li>
+              <li><a href="/public/pages/navbar.html">Menu latéral</a></li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <main>
+    <h1>Les menus latéraux avec Bootstrap</h1>
+  </main>
+  <footer></footer>
+</body>
+</html>
