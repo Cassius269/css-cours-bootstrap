@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="page de résentation du composant scrollspy">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Page de présentation du composant scrollspy</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="top:-10px">
+      <div class="container-fluid py-3 bg-dark navbar-dark">
+        <!-- Le logo de la marque ou le nom à citer en haut de la page à gauche-->
+        <a class="navbar-brand" href="/public/index.html">Accueil</a>
+        <!-- Le bouton de toggle pour le mobile-first -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divListLinks" data-bs-offset="0">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Le menu de navigation et la liste de liens des pages principales -->
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="divListLinks">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/typography.html">Typographie de Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/forms.html">Formulaires de Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/buttons.html">Boutons de Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/images.html">Les images</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/icons.html">Les icônes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/dropDown.html">Les dropdowns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/progressBar.html">progress bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/offCanvas.html">Menu latéral</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/navbar.html">Les navbar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public/pages/scrollspy.html">Le scrollspy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid mt-5 d-flex align-items-start">
+    <article class="" data-bs-spy="scroll"  data-bs-target="#listParagraphs" data-bs-smooth-scroll="true" tabindex="0">
+        <h1 class="my-5 bg-warning py-4 text-center">La mode : miroir de la société, entre histoire, créativité et tendances</h1>
+        
+        <p>La mode, bien plus qu’un simple phénomène vestimentaire, s’impose depuis toujours comme un reflet de la société, de ses évolutions et de ses aspirations.<br>À travers les siècles, elle a su s’adapter, se réinventer, et parfois même précéder les mutations culturelles, sociales et économiques. Aujourd’hui, la mode est à la fois industrie, art, outil de revendication et terrain d’expression individuelle.
+        </p>
+        <h2 id="history">Un voyage à travers l'histoire de la mode</h2>
+        <p>Si l’on trouve des traces de préoccupations stylistiques dès l’Antiquité, c’est véritablement au XIXe siècle que la mode telle que nous la connaissons aujourd’hui prend son essor. Charles-Frédéric Worth, pionnier de la haute couture, révolutionne le secteur en organisant les premiers défilés de mode dans les salons parisiens pour une clientèle féminine aisée. Ce geste marque la naissance de la haute couture et l’avènement du créateur comme figure centrale du monde de la mode.<br>
+        Au fil des décennies, la mode devient un enjeu national, notamment en France, où la cour de Versailles, sous Louis XIV, impose le raffinement et l’innovation comme symboles de prestige et de pouvoir. Dès le Moyen Âge, chaque génération voit éclore de nouvelles tendances, parfois si exubérantes que des édits royaux tentent d’en limiter l’excès. Le XXe siècle, quant à lui, est marqué par l’explosion de la créativité et l’émergence de maisons emblématiques telles que Chanel, Dior ou Yves Saint Laurent, qui imposent leur vision et redéfinissent sans cesse les codes du vêtement
+        </p>
+        <h2  id="makers">Les créateurs qui ont transformé la mode</h2>
+        <p>Certains noms ont marqué l’histoire de la mode par leur audace et leur capacité à bousculer les conventions. Coco Chanel, par exemple, a libéré les femmes du carcan du corset, imposant un style épuré et fonctionnel, synonyme d’élégance intemporelle. Christian Dior, avec son célèbre "New Look" en 1947, redessine la silhouette féminine en valorisant la taille et les courbes, tandis qu’Yves Saint Laurent introduit le smoking pour femmes, symbole d’émancipation et de modernité.<br>D’autres créateurs, comme Jean-Paul Gaultier, n’ont cessé de provoquer et de surprendre, en introduisant la jupe pour homme ou en jouant sur les codes du genre et de la provocation. Sonia Rykiel, surnommée la "reine du tricot", a quant à elle révolutionné le prêt-à-porter féminin en misant sur la maille et la liberté de mouvement.</p>
+        <h2  id="miror">La mode, miroir et moteur social</h2>
+        <p>La mode n’est pas qu’une question de goût ou d’apparence : elle constitue un véritable langage social. Elle permet d’affirmer son identité, de revendiquer son appartenance à un groupe ou, au contraire, de s’en démarquer. Les jeunes générations, particulièrement sensibles aux nouveaux courants, utilisent la mode comme premier moyen d’expression, avant même la parole. Des mouvements comme le punk ou le hip-hop illustrent la capacité de la mode à devenir un outil de rébellion ou de contestation.<br>Au-delà du style, la mode joue aujourd’hui un rôle de plus en plus important dans la lutte contre les stéréotypes et la promotion de la diversité. L’essor de la mode inclusive, qui valorise toutes les morphologies, origines et identités de genre, traduit une évolution profonde des mentalités et une volonté de représenter la société dans toute sa pluralité
+        </p>
+        <h2  id="trend">Tendances actuelles et avenir de la mode</h2>
+        <p>En 2025, la mode célèbre la couleur et l’audace. Les collections estivales s’inspirent des paysages tropicaux, affichant des teintes vives comme le corail, le rose hibiscus, le jaune safran ou le vert lime. Les imprimés exubérants envahissent les robes, les accessoires et même les bijoux, tandis que le néon fait son grand retour. Les maisons de couture, à l’image de Valentino, proposent des silhouettes fluides et asymétriques, capturant l’énergie et la joie de vivre de la saison. <br>Mais la mode de demain ne sera pas seulement une question d’esthétique. Face aux enjeux environnementaux et sociaux, l’industrie s’oriente vers une plus grande responsabilité : matériaux durables, transparence dans la production, respect des droits humains et inclusion deviennent des priorités. Les consommateurs, eux aussi, réclament une mode qui a du sens, qui raconte une histoire et qui respecte les valeurs de chacun</p>
+        <h2  id="conclusion">Conclusion</h2>
+        <p>La mode, loin d’être superficielle, est un miroir de notre société et de ses évolutions. Elle traverse les époques, s’adapte et se réinvente sans cesse, portée par des créateurs visionnaires et des mouvements collectifs. Qu’elle soit outil d’émancipation, d’expression ou de revendication, la mode reste un formidable terrain de créativité et d’innovation, toujours en quête d’un équilibre entre esthétique, identité et responsabilité.</p>
+    </article>
+    <ul class="list-group w-50 d-none d-xs-none d-sm-none d-lg-block list-unstyled position-sticky" style="top:6rem" id="listParagraphs">
+        <li>
+            <a class="list-group-item" href="#history">Un voyage à travers l'histoire de la mode</a>
+        </li>
+        <li>
+            <a class="list-group-item list-group-item-action" href="#makers">Les créateurs qui ont transformé la mode</a>
+        </li>
+        <li>
+            <a class="list-group-item list-group-item-action" href="#miror">La mode, miroir et moteur social</a>
+        </li>
+        <li>
+            <a class="list-group-item list-group-item-action" href="#trend">Tendances actuelles et avenir de la mode</a>
+        </li>
+        <li>
+            <a class="list-group-item list-group-item-action" href="#conclusion">Conclusion</a>
+        </li>
+    </ul>
+  </main>
+  <footer></footer>
+</body>
+</html>
